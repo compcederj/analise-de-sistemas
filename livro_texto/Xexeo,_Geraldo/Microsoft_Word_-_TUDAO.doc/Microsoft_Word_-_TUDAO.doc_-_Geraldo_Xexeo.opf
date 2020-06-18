@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">4</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">e2a6deaa-e799-432e-96b8-edd74177f4f2</dc:identifier>
+        <dc:title>Modelagem de Sistemas de Informação</dc:title>
+        <dc:creator opf:file-as="Xexéo, Geraldo" opf:role="aut">Geraldo Xexéo</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (3.11.1) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2007-01-03T15:12:10+00:00</dc:date>
+        <dc:language>pt</dc:language>
+        <meta content="{&quot;Geraldo Xexéo&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
+        <meta content="2018-01-16T12:09:18.461000+00:00" name="calibre:timestamp"/>
+        <meta content="Microsoft Word - TUDAO.doc" name="calibre:title_sort"/>
+    </metadata>
+    <guide>
+        <reference href="Microsoft Word - TUDAO.doc - Geraldo Xexeo.jpg" title="Capas" type="cover"/>
+    </guide>
+</package>
