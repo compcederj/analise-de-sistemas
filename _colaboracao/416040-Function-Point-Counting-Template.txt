@@ -1,0 +1,254 @@
+                                                    Instructions
+
+
+
+                            FUNCTION POINT COUNTING FACILITY
+
+
+     This Excel Workbook provides a complete function point counting facility. It enables you to:
+     . identify and count the individual components of an application,
+     . enter an adjustment factor,
+     . compute an overall estimate of effort.
+
+          Instructions
+
+                                                    Steps
+
+
+1    1. Identify the project or application being counted.
+
+     2. List and analyze each of the components of the application.
+
+2a     Internal Logical Files (ILFs)
+
+2b     External Interface Files (EIFs)
+
+2c     External Inputs (EIs)
+
+2d     External Outputs (EOs)
+
+2e     External Queries (EQs)
+
+3    3. Review the Unadjusted Function Point Count.
+
+4    4. Calculate the Value Adjustment Factor.
+
+5    5. Identify a Calibration Factor.
+
+6    6. Identify a Function Point Delivery Rate (in function points per person-month)
+
+7    7. Identify a conversion factor (person-months to person-days).
+
+8    8. Review the high level estimate of total effort.
+
+
+
+
+                                                          Page 1
+                                                       Summary
+
+
+
+                                                SUMMARY
+
+    Instructions                                                          Return
+Project Identification
+Customer Name
+Project Name
+Project Code
+Analyst
+Date
+
+Summary Estimates
+Unadjusted Function Point Count                                   From FP worksheet
+Processing Complexity Adjustment Factor                           From PCA worksheet
+Adjusted Function Point Count (AFP)                               Calculated: (FP*PCA)
+Calibration Factor (CF)                                           See note
+Total Function Point Measure (TFP)                                Calculated: (AFP*CF)
+Delivery Rate (DR) in FPs/person month                            See note
+Days per person-month (DPM)                                       See note
+High Level Effort Estimate (in person-days)                       Calculated: (TFP/DR) * DPM
+
+Diagnostics
+1. Enter project identification data.
+2. Check FP worksheet to review Unadjusted Function Point Count.
+3. Use PCA worksheet to identify the Processing Complexity Adjustment Factor.
+4. Enter a calibration factor.
+5. Enter a delivery rate in FPs/person-month. Delivery rate can not be zero
+6. Enter a factor for converting person-months to person-days.
+
+
+
+
+                                                        Page 2
+                                                          VAF
+
+
+
+                                VALUE ADJUSTMENT FACTOR (VAF)
+
+         Instructions                                           Return
+
+                                            Degree of
+General Systems Characteristics             Influence                     Description
+                                                (0-5)
+1. Data Communications
+2. Distributed Processing
+3. Performance
+4. Heavily Used Configuration
+5. Transaction Rates
+6. Online Data Entry
+7. Design for End User Efficiency
+8. Online Update
+9. Complex Processing
+10. Usable in Other Applications
+11. Installation Ease
+12. Operational Ease
+13. Multiple Sites
+14. Facilitate Change
+Total Degree of Influence (TDI)                         Calculated (sum of the above)
+Value Adjustment Factor (VAF)                           Calculated ((TDI*0.01)+0.65)
+
+Diagnostics
+Enter a value for each general system characteristic.
+Degree of influence values must be 0-5.
+
+
+
+
+                                                         Page 3
+                                                       FPs
+
+
+
+
+                      UNADJUSTED FUNCTION POINT COUNT (FP)
+
+    Instructions                                                         Return
+                                Functional                 Function
+Function Type                   Complexity  Count Weight Points (FPs)             FP %
+Internal Logical Files (ILFs)      Low        0     7          0
+                                 Average      0    10          0
+                                  High        0    15          0
+External Interface Files (EIFs)    Low        0     5          0
+                                 Average      0     7          0
+                                  High        0    10          0
+External Inputs (EIs)              Low        0     3          0
+                                 Average      0     4          0
+                                  High        0     6          0
+External Outputs (EOs)             Low        0     4          0
+                                 Average      0     5          0
+                                  High        0     7          0
+External Queries (EQs)             Low        0     3          0
+                                 Average      0     4          0
+                                  High        0     6          0
+           Total Unadjusted Function Point Count               0                   0%
+
+Diagnostics
+1. Use ILF worksheet to identify and analyze Internal Logical Files.
+2. Use EIF worksheet to identify and analyze External Interface Files.
+3. Use EI worksheet to identify and analyze External Inputs.
+4. Use EO worksheet to identify and analyze External Outputs.
+5. Use EQ worksheet to identify and analyze External Queries.
+
+
+
+
+                                                     Page 4
+                                                     ILFs
+
+
+
+                                INTERNAL LOGICAL FILES (ILFs)
+
+     Instructions           Insert New Row                         Return
+                     # of    # of            Complexity
+List of files       DETs    RETs    Low       Average       High      Notes and Assumptions
+
+
+
+
+Summary                              0           0           0
+
+
+
+
+                                                 Page 5
+                                                  EIFs
+
+
+
+                              EXTERNAL INTERFACE FILES (EIFs)
+
+     Instructions           Insert New Row                       Return
+                     # of    # of            Complexity
+List of files       DETs    RETs    Low       Average     High      Notes and Assumptions
+
+
+
+
+Summary                              0           0         0
+
+
+
+
+                                                 Page 6
+                                                    EIs
+
+
+
+                                   EXTERNAL INPUTS (EIs)
+
+    Instructions           Insert New Row                        Return
+                    # of    # of            Complexity
+List of inputs     DETs    FTRs    Low       Average      High      Notes and Assumptions
+
+
+
+
+Summary                             0           0          0
+
+
+
+
+                                                Page 7
+                                                    EOs
+
+
+
+                                   EXTERNAL OUTPUTS (EOs)
+
+    Instructions           Insert New Row                        Return
+                    # of    # of            Complexity
+List of Outputs    DETs    FTRs      Low     Average      High      Notes and Assumptions
+
+
+
+
+Summary                               0         0          0
+
+
+
+
+                                                Page 8
+                                                EQs
+
+
+
+                                   EXTERNAL QUERIES (EQs)
+
+    Instructions             Insert New Row                         Return
+                           Input Side           Output Side          Complexity
+List of Queries     # of      # of         # of    # of
+                   DETs      FTRs Cmplxty DETs FTRs Cmplxty   Low     Average     High   Notes and Assumptions
+
+
+
+
+Summary                                                        0         0         0
+
+
+
+
+                                               Page 9
+
